@@ -1,0 +1,11 @@
+image:
+  repository: eden2404/my-app  # ← REPLACE with your actual username!
+  tag: "1.0"
+  pullPolicy: IfNotPresent
+
+replicaCount: 3
+
+service:
+  type: NodePort
+  port: 80
+  nodePort: 30080
